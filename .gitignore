@@ -1,0 +1,14 @@
+/*
+
+!.gitignore
+!README.md
+
+!source/
+
+!/include
+/include/*
+!/include/gll
+!/include/gll/*
+
+!/docs/
+!/docs/*
