@@ -204,15 +204,15 @@ void process_assimp_mesh(
         if (positions)
         {
             positions_target.push_back(mesh->mVertices[i].x);
-            positions_target.push_back(mesh->mVertices[i].y);
             positions_target.push_back(mesh->mVertices[i].z);
+            positions_target.push_back(mesh->mVertices[i].y);
         }
 
         if (normals)
         {
             normals_target.push_back(mesh->mNormals[i].x);
-            normals_target.push_back(mesh->mNormals[i].y);
             normals_target.push_back(mesh->mNormals[i].z);
+            normals_target.push_back(mesh->mNormals[i].y);
         }
 
         if (texcoords)
@@ -224,12 +224,12 @@ void process_assimp_mesh(
         if (tangents)
         {
             tangents_target.push_back(mesh->mTangents[i].x);
-            tangents_target.push_back(mesh->mTangents[i].y);
             tangents_target.push_back(mesh->mTangents[i].z);
+            tangents_target.push_back(mesh->mTangents[i].y);
 
             bitangents_target.push_back(mesh->mBitangents[i].x);
-            bitangents_target.push_back(mesh->mBitangents[i].y);
             bitangents_target.push_back(mesh->mBitangents[i].z);
+            bitangents_target.push_back(mesh->mBitangents[i].y);
         }
 
         if (bones)
